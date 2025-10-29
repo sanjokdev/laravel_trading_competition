@@ -7,7 +7,7 @@ Make sure .env is present. Use the .env.example to create your .env file. Make s
 On the root of the project <code>docker compose up --build -d</code>
 !well thats how I do it anyways
 
-##Get the servers running.
+## Get the servers running.
 Docker already takes care of getting the laravel server running. So you only need to run the node server by exec'ing into the laravel-react-container.
 
 To exec into the container run <code>docker exec -it {containerid or containername} /bin/bash</code>
@@ -27,7 +27,7 @@ Make sure on the vite.config.js the server is looks like this and pass the node 
 </code>
 </pre>
 
-##Database setup
+## Database setup
 
 Migrate the database <code>php artisan migrate</code>
 
