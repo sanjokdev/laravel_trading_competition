@@ -8,8 +8,10 @@ On the root of the project <code>docker compose up --build -d</code>
 !well thats how I do it anyways
 
 ##Get the servers running.
-Docker already takes care of getting the laravel server running. So you only need to run the npm
-<code> npm run dev </code>
+Docker already takes care of getting the laravel server running. So you only need to run the node server by exec'ing into the laravel-react-container.
+
+To exec into the container run <code>docker exec -it {containerid or containername} /bin/bash</code>
+Then run <code> npm run dev </code>
 
 Make sure on the vite.config.js the server is looks like this and pass the node port number that you defined in the docker-compose.yaml file
 <pre>
