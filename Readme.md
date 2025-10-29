@@ -28,6 +28,7 @@ Make sure on the vite.config.js the server is looks like this and pass the node 
 </pre>
 
 ##Database setup
+
 Migrate the database <code>php artisan migrate</code>
 
 Seed the database <code>php artisan migrate db:seed</code>
